@@ -1,22 +1,20 @@
 n = int(input('Enter n: '))
-print(f"\nn = {n}, 2^n = {2**n}\n")
 
-sequence = [ 1 for i in range(n) ]
-_list=[]
+sequence = [0] * n
+_list= []
 
 while True:
     # print(sequence)
     _list.append(sequence.copy())
     idx = n-1
-    while idx >= 0 and sequence[idx] == 2:
+    while idx >= 0 and sequence[idx] == 1:
         idx -= 1
     if idx >= 0:
         sequence[idx] += 1
         for z in range(idx+1,len(sequence)):
-            sequence[z]= 1
+            sequence[z]= 0
     else:
         break
-
 
 _sorted = []
 for i in range(n+1):
