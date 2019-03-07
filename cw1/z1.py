@@ -1,7 +1,7 @@
 n = int(input('Enter n: '))
-k = int(input('Enter k: '))    
+k = int(input('Enter k: '))
 print(f"\nn = {n}, k = {k}\n")
-    
+
 sequence = [ 1 for i in range(k) ]
 
 while True:
@@ -10,11 +10,11 @@ while True:
     while idx >= 0 and sequence[idx] == n:
         idx -= 1
     if idx >= 0:
-        sequence[idx] += 1        
+        sequence[idx] += 1
         for z in range(idx+1,len(sequence)):
             sequence[z]= 1
     else:
-        break       
+        break
 
 
 # hacky solution
