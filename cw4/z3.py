@@ -1,8 +1,7 @@
-from scipy.special import comb as binom # example: binom(10, 5, exact=True) => 252
+from scipy.special import comb as binom
 n = int(input('Enter n: '))
 k = int(input('Enter k: '))
 r = int(input('Enter r: '))
-
 subset=[]
 x=1
 for i in range(1, k+1):
