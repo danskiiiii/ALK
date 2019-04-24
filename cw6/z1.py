@@ -1,3 +1,8 @@
+# Zadanie 1. (0.4 pkt)
+# Wykorzystując zależność rekurencyjną, napisz program generujący wszystkie k-elementowe
+# podzbiory zbioru {1, . . . , n} w porządku minimalnych zmian (revolving door).
+
+
 n, k = int(input('n: ')), int(input('k: '))
 def func(n,k):
     if k == 0: return []

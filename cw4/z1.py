@@ -1,3 +1,8 @@
+# Zadanie 1. (0.3 pkt)
+# Napisz program wyznaczający następnik k-elementowego podzbioru T zbioru {1, . . . , n}
+# w uporządkowaniu leksykograficznym podzbiorów k-elementowych.
+
+
 n = int(input('Enter n: '))
 subset = [ int(num) for num in input('Enter T: ').split() ]
 k = len(subset)

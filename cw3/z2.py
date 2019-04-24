@@ -1,3 +1,7 @@
+# Zadanie 2. (0.3 pkt)
+# Napisz program obliczający rangę podzbioru T ⊂ {1, . . . , n} w uporządkowaniu minimalnych
+# zmian (Graya) podzbiorów zbioru {1, . . . , n}.
+
 n = int(input('Enter n: '))
 t = input('Enter T: ')
 

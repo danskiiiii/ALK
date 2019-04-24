@@ -1,3 +1,7 @@
+# Zadanie 3. (0.3 pkt)
+# Napisz program wyznaczający podzbiór T o randze r
+# w porządku minimalnych zmian kelementowych podzbiorów zbioru {1, . . . , n}.
+
 from scipy.special import comb as binom
 n, k, r, subset = int(input('n: ')), int(input('k: ')), int(input('r: ')),  []
 x = n - 1

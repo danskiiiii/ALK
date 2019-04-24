@@ -1,3 +1,7 @@
+# Zadanie 3. (0.3 pkt)
+# Napisz program wyznaczający podzbiór T o zadanej pozycji r
+# w uporządkowaniu minimalnych zmian (Graya) podzbiorów zbioru {1, . . . , n}.
+
 n = int(input('Enter n: '))
 r = int(input('Enter r: '))
 import math

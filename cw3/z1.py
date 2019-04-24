@@ -1,3 +1,7 @@
+# Zadanie 1. (0.4 pkt)
+# Napisz program generujący wszystkie podzbiory zbioru {1, . . . , n} w porządku minimalnych
+# zmian (Graya), wykorzystując wagi Hamminga lub różnicę symetryczną zbiorów.
+
 n = int(input('Enter n: '))
 
 def is_weight_equal_num(seq): # hamming
