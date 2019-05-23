@@ -9,23 +9,25 @@ async function main() {
   const n = Number(await inp('n = '));
   const k = Number(await inp('k = '));
 
-  const arr = [...Array(n + 1)].map(a => [...Array(k + 1)]);
-  arr[0][0] = 1;
+  const P = [...Array(n + 1)].map(a => [...Array(k + 1)]);
+
+  P[0][0] = 1;
+
   for (let i = 1; i <= n; i++) {
-    arr[i][0] = 0;
+    P[i][0] = 0;
   }
 
   for (let i = 1; i <= n; i++) {
-    for (let j = 1; j < Math.min(i, k) + 1; j++) {
+    for (let j = 1; j < k + 1; j++) {
       if (i < 2 * j) {
-        arr[i][j] = arr[i - 1][j - 1];
+        P[i][j] = P[i - 1][j - 1];
       } else {
-        arr[i][j] = arr[i - 1][j - 1] + arr[i - j][j];
+        P[i][j] = P[i - 1][j - 1] + P[i - j][j];
       }
     }
   }
 
-  console.log(arr[n][k]);
+  console.log(P[n][k]);
 
   rl.close();
 }
